@@ -1,6 +1,6 @@
 # Golang Scheduled Task Executor
 
-This project implements a **Task Executor** in Go that supports scheduling tasks with different policies. It is backed by a **bounded blocking priority queue**, ensuring efficient and thread-safe task execution with a fixed number of worker threads.
+This project implements a Task Executor in Go that supports scheduling tasks with different policies. It uses a custom implementation of the **Bounded blocking priority queue**, ensuring efficient and thread-safe task execution with a fixed number of worker threads.
 
 ## Features
 
@@ -8,11 +8,6 @@ This project implements a **Task Executor** in Go that supports scheduling tasks
   - **One-shot Task**: Executes a task at a specific time.
   - **Fixed Delay Task**: Executes a task repeatedly with a fixed delay between each execution.
   - **Fixed Rate Task**: Executes a task repeatedly at fixed intervals, regardless of task execution time.
-
-- **Bounded Blocking Priority Queue**:
-  - Maintains tasks in order of their scheduled execution time.
-  - Blocks enqueue operations when the queue is full, ensuring bounded resource usage.
-  - Blocks dequeue operations when the queue is empty, waiting for tasks to become available.
 
 - **Task Interface**:
   - Defines a generic task structure with methods for execution and identification.
