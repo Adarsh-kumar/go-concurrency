@@ -1,6 +1,6 @@
-# Concurrent Scheduled Executor
+# Golang Scheduled Task Executor
 
-This project implements a **Concurrent Scheduled Executor** in Go that supports scheduling tasks with different policies. It is backed by a **bounded blocking priority queue**, ensuring efficient and thread-safe task execution with a fixed number of worker threads.
+This project implements a **Task Executor** in Go that supports scheduling tasks with different policies. It is backed by a **bounded blocking priority queue**, ensuring efficient and thread-safe task execution with a fixed number of worker threads.
 
 ## Features
 
